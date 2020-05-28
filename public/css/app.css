@@ -31098,6 +31098,10 @@ a.text-muted:hover {
   color: #3490dc;
 }
 
+.text-grey {
+  color: grey;
+}
+
 .text-indigo {
   color: #6574cd;
 }
@@ -48063,7 +48067,16 @@ readers do not read off random characters that represent icons */
   color: #fff !important;
 }
 
+.borderTop {
+  border-top: 3px solid #445488 !important;
+}
+
 .main-sidebar {
+  background-color: #445488 !important;
+}
+
+.headerColor {
+  color: ivory !important;
   background-color: #445488 !important;
 }
 
@@ -48076,7 +48089,7 @@ readers do not read off random characters that represent icons */
 }
 
 .logoutMargin {
-  margin-top: 400px !important;
+  margin-top: 350px !important;
 }
 
 .labelNewEmployee {
@@ -48086,5 +48099,135 @@ readers do not read off random characters that represent icons */
 
 .commentTable {
   font-size: 10px !important;
+}
+
+.addWorkdayButtonCenter {
+  align-self: center !important;
+}
+
+.iconSpace {
+  margin-right: 10px !important;
+  margin-top: 2px !important;
+}
+
+.card1 {
+  width: 47% !important;
+  margin-left: 13px !important;
+  margin-right: 10px !important;
+  float: left;
+}
+
+.card2 {
+  width: 49% !important;
+  margin-left: 6px !important;
+  float: right;
+}
+
+.disabled {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+.information {
+  border: none !important;
+  margin-top: -10px !important;
+  margin-bottom: 10px !important;
+  margin-left: -10px !important;
+  color: grey !important;
+  font-style: italic !important;
+}
+
+.fontInformation {
+  font-size: 0.842rem !important;
+}
+
+input[type=file] {
+  display: none;
+  border-radius: 25px;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: small !important;
+}
+
+.alignCenter {
+  text-align: center !important;
+}
+
+.updatePhoto {
+  font-size: small !important;
+  color: blue;
+  border: none !important;
+  background-color: white !important;
+}
+
+.updatePhoto:link {
+  color: red;
+}
+
+/* visited link */
+
+.updatePhoto:visited {
+  color: green;
+}
+
+/* mouse over link */
+
+.updatePhoto:hover {
+  color: hotpink;
+}
+
+/* selected link */
+
+.updatePhoto:active {
+  color: blue;
+}
+
+.saveMessage {
+  color: red !important;
+  font-style: italic !important;
+}
+
+.quickInfo {
+  text-align: center !important;
+  margin-top: 5px !important;
+  font-weight: 800 !important;
+}
+
+.approvedIcon1 {
+  margin-left: 45px !important;
+  color: red !important;
+  font-size: 1.2rem !important;
+}
+
+.approvedIcon2 {
+  margin-left: 45px !important;
+  color: #38c172 !important;
+  font-size: 1.2rem !important;
+}
+
+.approvedIcon3 {
+  margin-left: 45px !important;
+  color: #f6993f !important;
+  font-size: 1.2rem !important;
+}
+
+.approvedCheckbox {
+  margin-left: 23px !important;
+  cursor: pointer;
+  color: #38c172 !important;
+  font-size: 1.2rem !important;
+}
+
+.approvedCheckbox2 {
+  margin-left: 23px !important;
+  cursor: pointer;
+  color: red !important;
+  font-size: 1.2rem !important;
 }
 

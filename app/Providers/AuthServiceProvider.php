@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Laravel\Passport\Passport;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
 
@@ -13,7 +14,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        // 'App\Model' => 'App\Policies\ModelPolicy',
+        'App\Model' => 'App\Policies\ModelPolicy',
     ];
 
     /**
@@ -25,6 +26,19 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
+        Gate::define('isEmployee', function ($user) {
+            return $user->permission_level === 'employee';
+        });
+
+        Gate::define('isSupervisor', function ($user) {
+            return $user->permission_level === 'supervisor';
+        });
+        
+        Gate::define('isAdmin', function ($user) {
+            return $user->permission_level === 'admin';
+        });
+
+        Passport::routes();
         //
     }
 }

@@ -309,7 +309,7 @@
           },
 
           loadUsers(){
-            axios.get("api/user").then(({ data }) => (this.users = data.data));
+            axios.get("api/usersSupervisor").then(({ data }) => (this.users = data));
           },
 
           createUser(){
